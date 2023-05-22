@@ -19,6 +19,7 @@ const StyledCard = styled.div`
   width: 82vw;
   height: 25px;
   border: black solid 1px;
+  border-radius: 5px;
   padding-left: 20px;
   margin: auto;
 `;
