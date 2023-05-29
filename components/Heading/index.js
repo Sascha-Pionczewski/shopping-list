@@ -2,16 +2,27 @@ import styled from "styled-components";
 
 export default function Heading() {
   return (
-    <StyledHeading>
-      <h1>Shopping List</h1>
-      <p>was brauchen wir..?</p>
-    </StyledHeading>
+    <Container>
+      <Title>Shopping List</Title>
+      <Subtitle>Was brauchen wir..?</Subtitle>
+    </Container>
   );
 }
 
-const StyledHeading = styled.div`
+const Container = styled.div`
   background-color: lightgray;
-  margin: 0;
-  padding: 5px 0 10px 0;
+  padding: 10px 0;
   text-align: center;
+  margin-bottom: 20px;
+`;
+
+const Title = styled.h1`
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+`;
+
+const Subtitle = styled.p`
+  margin: 0;
+  font-size: 16px;
 `;
